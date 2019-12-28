@@ -31,10 +31,6 @@ div.container4 h1 {
         animation-duration: 1s;
         transform: translate(-50%, -50%) }
 
-        a {
-            color: #fff4a0
-          }
-
         @keyframes fadeInOut {
             0% {
               opacity: 0;
