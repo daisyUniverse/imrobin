@@ -1,5 +1,6 @@
 let textBox = document.getElementById("logo");
 
+setTimeout(showNav, 3500);
 setTimeout(deleteText, 1000);
 
 function addText() {
@@ -26,6 +27,11 @@ function deleteText() {
   	addText();
   }
 }
+
+function showNav() {
+	var x = document.getElementById("navtext");
+	x.style.display = "block";
+  } 
 
 // Code heavily adapted from dcookwebdev on FreeCodeCamp
 // original source https://jsfiddle.net/q9tn70uo/1/
