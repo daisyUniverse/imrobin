@@ -4,7 +4,7 @@ setTimeout(showNav, 3500);
 setTimeout(deleteText, 1000);
 
 function addText() { // this bit types it out with random delay to simulate typing
-	let newText = "Hi, I'm Robin! ★"; // this is where the gay boy goes
+	let newText = textBox.getAttribute('animationText'); // "Hi, I'm Robin! ★"; // this is where the gay boy goes
   let n = 0;
   function typeNewText() {
   	if (n <= newText.length) {
