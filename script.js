@@ -3,6 +3,9 @@ let textBox = document.getElementById("logo");
 setTimeout(showNav, 3500);
 setTimeout(deleteText, 1000);
 
+var oldURL = document.referrer;
+console.log(oldURL);
+
 function addText() { // this bit types it out with random delay to simulate typing
 	let newText = textBox.getAttribute('animationText'); // "Hi, I'm Robin! ★"; // this is where the gay boy goes
   let n = 0;
