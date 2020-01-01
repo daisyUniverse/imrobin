@@ -3,8 +3,31 @@ let textBox = document.getElementById("logo");
 setTimeout(showNav, 3500);
 setTimeout(deleteText, 1000);
 
-var oldURL = document.referrer;
-console.log(oldURL);
+var lastPage = document.referrer // debug thing
+
+var introText = "hirob.in" 
+
+if (lastPage.startsWith("https://hirob.in/")){ // Checks the last page for a smoother text transition
+	var prevPage = lastPage.replace("https://hirob.in/","").replace("/","");
+	if (prevPage == "contact"){
+		var introText = "Wanna talk? 📱";
+		textBox.innerHTML = introText
+	}
+	else if (prevPage == "about"){
+		var introText = "Heres the deets ٩( ᐛ )و";
+		textBox.innerHTML = introText
+	} 
+
+	else if (prevPage == "portfolio"){
+		var introText = "I make stuff!! ✨";
+		textBox.innerHTML = introText
+	} 
+
+	else if (prevPage == ""){
+		var introText = "Hi, I'm Robin! ★";
+		textBox.innerHTML = introText
+	}
+}
 
 function addText() { // this bit types it out with random delay to simulate typing
 	let newText = textBox.getAttribute('animationText'); // "Hi, I'm Robin! ★"; // this is where the gay boy goes
@@ -24,7 +47,7 @@ function addText() { // this bit types it out with random delay to simulate typi
 function deleteText() { // deletes the existing text
 	let oldText = textBox.innerHTML;
   if (oldText.length > 0) {
-  	textBox.innerHTML = oldText.slice(0, oldText.length - 1); //bit by bit
+	textBox.innerHTML = oldText.slice(0, oldText.length - 1); //bit by bit
     setTimeout(deleteText, Math.floor((Math.random() * 100) + 40));
   } else if (oldText.length == 0) {
   	addText();
@@ -32,7 +55,7 @@ function deleteText() { // deletes the existing text
 }
 
 function showNav() { // makes sure the nav shows after the animation
-	var x = document.getElementById("navtext");
+	var x = document.getElementById("navtextintro");
 	x.style.display = "block";
   } 
 
