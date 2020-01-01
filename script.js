@@ -4,7 +4,7 @@ setTimeout(showNav, 3500);
 setTimeout(deleteText, 1000);
 
 var lastPage = document.referrer // debug thing
-
+var typeSpeed = 80
 var introText = "hirob.in" 
 
 if (lastPage.startsWith("https://hirob.in/")){ // Checks the last page for a smoother text transition
@@ -36,7 +36,7 @@ function addText() { // this bit types it out with random delay to simulate typi
   	if (n <= newText.length) {
   		textBox.innerHTML = newText.slice(0, n);
     	n++;
-    	setTimeout(typeNewText, Math.floor((Math.random() * 100) + 40));
+    	setTimeout(typeNewText, Math.floor((Math.random() * typeSpeed) + (typeSpeed * .5)));
   	}
   }
   if (n == 0) {
@@ -48,7 +48,7 @@ function deleteText() { // deletes the existing text
 	let oldText = textBox.innerHTML;
   if (oldText.length > 0) {
 	textBox.innerHTML = oldText.slice(0, oldText.length - 1); //bit by bit
-    setTimeout(deleteText, Math.floor((Math.random() * 100) + 40));
+    setTimeout(deleteText, Math.floor((Math.random() * typeSpeed) + (typeSpeed * .5)));
   } else if (oldText.length == 0) {
   	addText();
   }
