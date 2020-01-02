@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
+html{
+  background: linear-gradient(269deg, #ffdde1, #ee9ca7);
+  background-size: 400% 400%;
+  
+  -webkit-animation: AnimationName 60s ease infinite;
+  -moz-animation: AnimationName 60s ease infinite;
+  animation: AnimationName 60s ease infinite;
+}
+
 div.container4 {
     height: 45%;
     position: relative }
@@ -14,46 +23,62 @@ div.container4 h1 {
     color: #fff4a0;
     transform: translate(-50%, -50%) }
 
-    div.navintro {
-        height: 50%;
-        position: relative  }
-    div.navintro h4 {
-        margin: 0;
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        display: none;
-        margin-right: -50%;
-        font-family: 'Nunito', sans-serif;
-        font-size: 3vw;
-        color: #fff4a0;
-        animation-name: fadeInOut;
-        animation-duration: 1s;
-        transform: translate(-50%, -50%) }
+div.navintro {
+    height: 50%;
+    position: relative  }
+div.navintro h4 {
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    display: none;
+    margin-right: -50%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 3vw;
+    color: #fff4a0;
+    animation-name: fadeInOut;
+    animation-duration: 1s;
+    transform: translate(-50%, -50%) }
 
-      div.nav {
-          height: 50%;
-          position: relative  }
-      div.nav h4 {
-          margin: 0;
-          position: absolute;
-          top: 25%;
-          left: 50%;
-          margin-right: -50%;
-          font-family: 'Nunito', sans-serif;
-          font-size: 3vw;
-          color: #fff4a0;
-          transform: translate(-50%, -50%) 
-      }
-        a {
-            color: #fff4a0
-          }
+div.nav {
+    height: 50%;
+    position: relative  }
+div.nav h4 {
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 3vw;
+    color: #fff4a0;
+    transform: translate(-50%, -50%) 
+}
+a {
+  color: #fff4a0
+}
 
-        @keyframes fadeInOut {
-            0% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    }
+  100% {
+    opacity: 1;
+   }
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:72% 0%}
+  50%{background-position:29% 100%}
+  100%{background-position:72% 0%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:72% 0%}
+  50%{background-position:29% 100%}
+  100%{background-position:72% 0%}
+}
+@keyframes AnimationName {
+  0%{background-position:72% 0%}
+  50%{background-position:29% 100%}
+  100%{background-position:72% 0%}
+}
