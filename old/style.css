@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+html{
+  background: #ffa0e6;
+}
+
+div.container4 {
+    height: 45%;
+    position: relative }
+div.container4 h1 {
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-right: -50%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 8vw;
+    color: #fff4a0;
+    transform: translate(-50%, -50%) }
+
+div.navintro {
+    height: 50%;
+    position: relative  }
+div.navintro h4 {
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    display: none;
+    margin-right: -50%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 3vw;
+    color: #fff4a0;
+    animation-name: fadeInOut;
+    animation-duration: 1s;
+    transform: translate(-50%, -50%) }
+
+div.nav {
+    height: 50%;
+    position: relative  }
+div.nav h4 {
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 3vw;
+    color: #fff4a0;
+    transform: translate(-50%, -50%) 
+}
+
+div.line {
+  border-bottom: tomato;
+  width: 80%;
+  height: 1px;
+  position: absolute;
+}
+
+div.content {
+  position: relative;
+  
+}
+div.content h4 {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2vw;
+  color: #fff4a0;
+  transform: translate(-75%, -15%) 
+}
+div.content a {
+  margin: 0;
+  position: absolute;
+  font-family: 'Nunito', sans-serif;
+  font-size: 3vw;
+  color: #fff4a0;
+}
+div.content img {
+  margin: 0;
+  position: absolute;
+  left: 110%;
+  width: 200px;
+  height: 200px;
+}
+
+a {
+  color: #fff4a0
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    }
+  100% {
+    opacity: 1;
+   }
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:72% 0%}
+  50%{background-position:29% 100%}
+  100%{background-position:72% 0%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:72% 0%}
+  50%{background-position:29% 100%}
+  100%{background-position:72% 0%}
+}
+@keyframes AnimationName {
+  0%{background-position:72% 0%}
+  50%{background-position:29% 100%}
+  100%{background-position:72% 0%}
+}

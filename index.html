@@ -1,44 +1,92 @@
+<!DOCTYPE html>
+
 <html>
-  <head>
-    <title >I'm Robin! ✨</title >
 
-      <meta property="og:title" content="I'm Robin! ✨" />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://hirob.in/" />
-      <meta property="og:image" content="https://hirob.in/img/me.jpg" />
-      <meta property="og:description" content="Here's some stuff I do!" />
-  
-      <meta name="twitter:card" content="summary" />
-      <meta name="twitter:site" content="@robinhahayes" />
-      <meta name="twitter:creator" content="@robinhahayes" />
-      <meta property="og:title" content="I'm Robin! ✨" />
-      <meta property="og:description" content="Here's some stuff I do!" />
-      <meta name="viewport" content="width=device-width, initial-scale=0.8">
-      <meta name="twitter:image" content="https://hirob.in/img/me.jpg" />  
+    <head> 
+        <title >I'm Robin! ✨</title >
 
-    <meta content="">
-    <link rel="stylesheet" href="style.css">
+            <meta property="og:title" content="I'm Robin! ✨" />
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://hirob.in/" />
+            <meta property="og:image" content="https://hirob.in/img/me.jpg" />
+            <meta property="og:description" content="Here's some stuff I do!" />
+        
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:site" content="@robinhahayes" />
+            <meta name="twitter:creator" content="@robinhahayes" />
+            <meta property="og:title" content="I'm Robin! ✨" />
+            <meta property="og:description" content="Here's some stuff I do!" />
+            <meta name="viewport" content="width=device-width, initial-scale=0.8">
+            <meta name="twitter:image" content="https://hirob.in/img/me.jpg" />  
+      
+          <meta content="">
+
+        <link 
+            rel="stylesheet" 
+            type="text/css" 
+            href="style.css" />
+
+    </head>
+
+    <script>
+
+        function AboutShown(){
+            document.getElementById("About").style.visibility = "visible";
+            document.getElementById('videobcg').style.filter = 'blur(15px)';
+        }
+        function AboutHide(){
+            document.getElementById("About").style.visibility = "hidden";
+            document.getElementById('videobcg').style.filter = 'blur(0px)';
+        }
+
+    </script>
 
     <style>
-    </style>
-  </head>
-  <body>
-    <!--bgcolor="#ffa0e6"-->
-    <div class=container4>
-      <h1 id="logo" animationText="Hi, I'm Robin! ★">hirob.in</h1>
-    </div>
-    <div class=navintro>
-      <h4 id=navtextintro>
-        <a href="about/">About</a> • 
-        <a href="contact/">Contact</a> • 
-        <a href="portfolio/">Portfolio</a> 
-      </h4>
-    </div>
-    
-  </body>
-  <script src="script.js"></script> 
-  <!-- Shout out to SimpleFlips -->
-  <!-- I love you codie, we'll make it to japan soon. -->
-  <!-- 𓀥   𓁆 𓀕   -->
-  <!-- 𓁆 𓀟  𓀣 𓁀 -->
+    @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Paytone+One&display=swap');
+    </style> 
+
+    <body scroll="no" style="overflow: hidden">
+
+        <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+            <source src="img/tavernflip.webm" type="video/webm">
+            browser doesn't seem to support HTML5 video. What's 1995 like?
+        </video>
+
+        <div class="content">
+            HI, ROBIN!
+        </div>
+    <br/>
+        <div class="links">
+            <img src="png/about_unselected.png" onclick="AboutShown()" onmouseover="this.src='png/about_selected.png';" onmouseout="this.src='png/about_unselected.png';" /></br></br>
+            <a href="https://github.com/robinuniverse?tab=repositories"><img src="png/projects_unselected.png" onmouseover="this.src='png/projects_selected.png';" onmouseout="this.src='png/projects_unselected.png';" /></a></br></br>
+            <a href="https://github.com/robinuniverse/Wallpapers"><img src="png/wallpaper_unselected.png" onmouseover="this.src='png/wallpaper_selected.png';" onmouseout="this.src='png/wallpaper_unselected.png';" /></a></br></br>
+            <a href="https://github.com/robinuniverse/scripts"><img src="png/linux_unselected.png" onmouseover="this.src='png/linux_selected.png';" onmouseout="this.src='png/linux_unselected.png';" /></a></br></br>
+            <a href="http://elisha.tech/desnahub/index.php/Main_Page"><img src="png/desna_unselected.png" onmouseover="this.src='png/desna_selected.png';" onmouseout="this.src='png/desna_unselected.png';" /></a></br></br>
+        </div>
+
+        <div id="About">
+            <img src="png/x.png" onclick="AboutHide()" onmouseover="this.src='png/x.png';" onmouseout="this.src='png/x.png';" id="close"/>
+            <b>Name:</b> Elisha Shaddock, but I prefer to be called Robin. </br>
+            <b>Age:</b> 25 </br>
+            <b>Location:</b> Lake Jackson, TX. </br> 
+            <b>Skills:</b> Linux, Programming, Server management, 3D Art, Photography, etc., </br>
+            <p>
+                Hi. Since you're seeing this, that means you're seeing my site as I'm working on it. That's pretty exciting, right? 
+                There isn't really going to be much interesting here for a while, since I'm still getting everything set up, but until
+                then I hope you enjoy seeing this page progress. Cheers!
+            </p>
+            <b>e-mail:</b> <a href = "mailto: evshaddock@gmail.com">evshaddock@gmail.com</a> </br> 
+            <b>telly:</b> <a href = "Tel: 979-739-2975">(979) 739-2975</a> </br> 
+        </div>
+
+        <div class="footer">
+            <p>
+                <a href="https://github.com/robinuniverse"><img src="png/github.png" hspace="20"/>
+                <a href="https://sketchfab.com/Elisha.Shaddock"><img src="png/sketchfab.png" hspace="20"/>
+                <a href="https://www.deviantart.com/keybourd-man"><img src="png/deviantart.png" hspace="20"/>
+                <a href="https://twitter.com/robinhahayes"><img src="png/twitter.png" hspace="20"/>
+                <a href="https://ko-fi.com/robin_universe"><img src="png/kofi.png" hspace="20"/>
+            </p>
+        </div>
+    </body>
 </html>

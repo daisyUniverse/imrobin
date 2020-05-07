@@ -1,116 +1,68 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+body{ margin:0;}
 
-html{
-  background: #ffa0e6;
-}
-
-div.container4 {
-    height: 45%;
-    position: relative }
-div.container4 h1 {
-    margin: 0;
+.content {
     position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-right: -50%;
-    font-family: 'Nunito', sans-serif;
-    font-size: 8vw;
-    color: #fff4a0;
-    transform: translate(-50%, -50%) }
-
-div.navintro {
-    height: 50%;
-    position: relative  }
-div.navintro h4 {
-    margin: 0;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    display: none;
-    margin-right: -50%;
-    font-family: 'Nunito', sans-serif;
-    font-size: 3vw;
-    color: #fff4a0;
-    animation-name: fadeInOut;
-    animation-duration: 1s;
-    transform: translate(-50%, -50%) }
-
-div.nav {
-    height: 50%;
-    position: relative  }
-div.nav h4 {
-    margin: 0;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    margin-right: -50%;
-    font-family: 'Nunito', sans-serif;
-    font-size: 3vw;
-    color: #fff4a0;
-    transform: translate(-50%, -50%) 
+    margin-left: 4% ;
+    margin-top: 2% ;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 7vw;
+    color: white;
 }
 
-div.line {
-  border-bottom: tomato;
-  width: 80%;
-  height: 1px;
-  position: absolute;
+.links {
+    position: absolute ;
+    transform: scale(50%) ;
+    transform-origin: left ;
+    bottom: 57%;
+    width: 100%;
+    margin-left: 4%;
+    height: 2.5rem;
 }
 
-div.content {
-  position: relative;
-  
-}
-div.content h4 {
-  margin: 0;
-  position: absolute;
-  left: 50%;
-  margin-right: -50%;
-  font-family: 'Nunito', sans-serif;
-  font-size: 2vw;
-  color: #fff4a0;
-  transform: translate(-75%, -15%) 
-}
-div.content a {
-  margin: 0;
-  position: absolute;
-  font-family: 'Nunito', sans-serif;
-  font-size: 3vw;
-  color: #fff4a0;
-}
-div.content img {
-  margin: 0;
-  position: absolute;
-  left: 110%;
-  width: 200px;
-  height: 200px;
-}
+.footer {
+    position: absolute ;
+    transform: scale(20%) ;
+    transform-origin: left ;
+    bottom: 7%;
+    width: 100%;
+    margin-left: 4%;
+    height: 2.5rem;
+}   
+
 
 a {
-  color: #fff4a0
+    color: #ffffff;
+} 
+
+
+
+#About {
+    position: absolute ;
+    left: 40%;
+    top: 40%;
+    color: white;
+    border-radius: 5px ;
+    background: rgba(75, 75, 75, 0.5); 
+    padding: 60px; 
+    width: 45%;
+    visibility: hidden;
 }
 
-@keyframes fadeInOut {
-  0% {
-    opacity: 0;
-    }
-  100% {
-    opacity: 1;
-   }
+#close {
+    position: absolute ;
+    transform: scale(0.1) ;
+    transform-origin: top right;
+    right: 0% ;
+    top: 1% ;
 }
 
-@-webkit-keyframes AnimationName {
-  0%{background-position:72% 0%}
-  50%{background-position:29% 100%}
-  100%{background-position:72% 0%}
-}
-@-moz-keyframes AnimationName {
-  0%{background-position:72% 0%}
-  50%{background-position:29% 100%}
-  100%{background-position:72% 0%}
-}
-@keyframes AnimationName {
-  0%{background-position:72% 0%}
-  50%{background-position:29% 100%}
-  100%{background-position:72% 0%}
+#videobcg {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    right: 0;
+    bottom: 0;
+    -o-filter: blur(0px);
+    filter: blur(0px);
+    transform: scale(1.04);
 }
