@@ -5,36 +5,37 @@ body{ margin:0;}
     margin-left: 4% ;
     margin-top: 2% ;
     font-family: 'Paytone One', sans-serif;
-    font-size: 7vw;
+    font-size: 13vh;
     color: white;
 }
 
 .links {
-    position: absolute ;
-    transform: scale(50%) ;
-    transform-origin: left ;
-    bottom: 57%;
-    width: 100%;
+    position: absolute;
     margin-left: 4%;
-    height: 2.5rem;
+    margin-top: 35vh;
+    font-size: 2.5vh;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+
 }
 
 .footer {
-    position: absolute ;
-    transform: scale(20%) ;
-    transform-origin: left ;
-    bottom: 7%;
-    width: 100%;
+    position: absolute;
     margin-left: 4%;
-    height: 2.5rem;
+    bottom: 1vh;
 }   
 
 
 a {
     color: #ffffff;
+    text-decoration: none;
 } 
 
-
+h1:hover {
+    background-color: rgba(255,255,255,0.5);
+    pointer-events: all;
+    cursor: pointer;
+}
 
 #About {
     position: absolute ;
