@@ -1,4 +1,8 @@
-body{ margin:0;}
+body{ 
+    margin:0;
+    background: rgb(9,9,79);
+    background: linear-gradient(90deg, rgba(9,9,79,1) 9%, rgba(61,138,105,1) 100%);
+}
 
 .content {
     position: absolute;
@@ -25,7 +29,6 @@ body{ margin:0;}
     bottom: 1vh;
 }   
 
-
 a {
     color: #ffffff;
     text-decoration: none;
@@ -39,14 +42,17 @@ h1:hover {
 
 #About {
     position: absolute ;
-    left: 40%;
-    top: 40%;
+    left: 30vw;
+    top: 30vh;
     color: white;
     border-radius: 5px ;
     background: rgba(75, 75, 75, 0.5); 
-    padding: 60px; 
-    width: 45%;
+    padding: 3.5vw; 
+    width: 90vh;
     visibility: hidden;
+    font-size: 2vh;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
 }
 
 #close {
