@@ -31,18 +31,8 @@
         
     </head>
 
-    <script>
-
-        function AboutShown(){
-            document.getElementById("About").style.visibility = "visible";
-            document.getElementById('videobcg').style.filter = 'blur(15px)';
-        }
-        function AboutHide(){
-            document.getElementById("About").style.visibility = "hidden";
-            document.getElementById('videobcg').style.filter = 'blur(0px)';
-        }
-
-    </script>
+    <script src="script.js"></script>
+    
 
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Paytone+One&display=swap');
@@ -63,33 +53,41 @@
         <div class="links">
             <h1 style="padding: 0px; margin: 0px; display: block; width: 150%;" onclick="AboutShown()">ABOUT</h1>
             <a href="https://github.com/robinuniverse?tab=repositories"><h1 style="padding: 0px; margin: 0px; display: block; width: 150%;">PROJECTS</h1></a>
-            <a href="https://github.com/robinuniverse/Wallpapers"><h1 style="padding: 0px; margin: 0px; display: block; width: 150%;">WALLPAPERS</h1></a>
-            <a href="https://github.com/robinuniverse/scripts"><h1 style="padding: 0px; margin: 0px; display: block; width: 150%;">LINUX</h1></a>
-            <a href="http://elisha.tech/desnahub/index.php/Main_Page"><h1 style="padding: 0px; margin: 0px; display: block; width: 150%;">DESNA</h1></a>
+            <a href="https://github.com/robinuniverse/Wallpapers">      <h1 style="padding: 0px; margin: 0px; display: block; width: 150%;">WALLPAPERS</h1></a>
+            <a href="https://github.com/robinuniverse/scripts">         <h1 style="padding: 0px; margin: 0px; display: block; width: 150%;">LINUX</h1></a>
         </div>
 
         <div id="About">
             <img src="svg/close.svg" onclick="AboutHide()" onmouseover="this.src='svg/close.svg';" onmouseout="this.src='svg/close.svg';" id="close"/>
             <b>Name:</b> Elisha Shaddock, but I prefer to be called Robin. </br>
             <b>Age:</b> 25 </br>
-            <b>Location:</b> Lake Jackson, TX. </br> 
+            <b>Location:</b> Andrews, TX. </br> 
             <b>Skills:</b> Linux, Programming, Server management, 3D Art, Photography, etc., </br>
             <p>
                 Hi. Since you're seeing this, that means you're seeing my site as I'm working on it. That's pretty exciting, right? 
                 There isn't really going to be much interesting here for a while, since I'm still getting everything set up, but until
                 then I hope you enjoy seeing this page progress. Cheers!
             </p>
-            <b>e-mail:</b> <a href = "mailto: evshaddock@gmail.com">evshaddock@gmail.com</a> </br> 
-            <b>telly:</b> <a href = "Tel: 979-739-2975">(979) 739-2975</a> </br> 
+            <b>email:</b><a href = "mailto: evshaddock@gmail.com">evshaddock@gmail.com </a></br> 
+            <b>telly:</b><a href = "Tel: 979-739-2975">(979) 739-2975                  </a></br> 
         </div>
+
+        <div id="console">
+            <div id="consoleheader"><b>Console</b></div>
+            <div id="consolclose"><b>×</b></div>
+            <div id="consolelog">Welcome to this fake console window I made for my website lol. </br> Feel free to fuck around and see what you can find. :)</div>
+            <div id="consoleinput"><input type="text" id="cin" name="cin"></div>
+            <div id="consoleinputbutton">Submit</div>
+        </div>
+        <script src="console.js"></script>
 
         <div class="footer">
             <p>
-                <a href="https://github.com/robinuniverse"><img src="svg/github.svg" hspace="1" style="height:6vh"/>
-                <a href="https://sketchfab.com/Elisha.Shaddock"><img src="svg/sketchfab.svg" hspace="1" style="height:6vh"/>
-                <a href="https://www.deviantart.com/keybourd-man"><img src="svg/deviantart.svg" hspace="1" style="height:6vh"/>
-                <a href="https://twitter.com/RobinUniverse_"><img src="svg/twitter.svg" hspace="1" style="height:6vh"/>
-                <a href="https://ko-fi.com/robin_universe"><img src="svg/kofi.svg" hspace="1" style="height:6vh"/>
+                <a href="https://github.com/robinuniverse">         <img src="svg/github.svg"       hspace="1" style="height:6vh"/>
+                <a href="https://sketchfab.com/Robin.Universe">     <img src="svg/sketchfab.svg"    hspace="1" style="height:6vh"/>
+                <a href="https://www.deviantart.com/keybourd-man">  <img src="svg/deviantart.svg"   hspace="1" style="height:6vh"/>
+                <a href="https://twitter.com/RobinUniverse_">       <img src="svg/twitter.svg"      hspace="1" style="height:6vh"/>
+                <a href="https://ko-fi.com/robin_universe">         <img src="svg/kofi.svg"         hspace="1" style="height:6vh"/>
             </p>
         </div>
     </body>
