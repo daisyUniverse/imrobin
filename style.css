@@ -11,7 +11,7 @@ body{
     margin-left: 4% ;
     margin-top: 2% ;
     font-family: 'Paytone One', sans-serif;
-    font-size: 13vh;
+    font-size: 7vw;
     color: white;
 }
 
@@ -25,7 +25,27 @@ body{
 
 }
 
+.projects {
+    position: absolute;
+    overflow-x:scroll;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 25vh;
+    font-size: 2vh;
+    width: 100vw;
+    height: 60vh;
+    font-family: 'Source Code Pro', monospace;
+    white-space: nowrap;
+    color: white;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
 
+.projects:active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    transform: scale(1.01);
+}
 
 .footer {
     position: absolute;
@@ -65,6 +85,35 @@ h1:hover {
     transform-origin: top right;
     right: 0% ;
     top: 1% ;
+}
+
+#project {
+    text-align:center;
+    border-radius: 15px;
+    height: 50vh;
+    width: 28vh;
+    margin: 1vw;
+    white-space: normal;
+    background-color: rgba(37, 37, 37, 0.657);
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
+#project a {
+    position: relative;
+    top: 63%;
+    left: 38%;
+}
+
+#project:hover {
+    background-color: #3d3d3df3;
+    transform: scale(1.02);
+    
+}
+
+#blurb {
+    margin: 1%;
+    font-size: 2.1vh;
 }
 
 #videobcg {
@@ -153,3 +202,13 @@ input {
     font-family: 'Courier New', Courier, monospace;
 }
 
+ /* Hide scrollbar for Chrome, Safari and Opera */
+ .example::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .example {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  } 

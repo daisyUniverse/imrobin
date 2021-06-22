@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head> 
+        <title >I'm Robin! ✨</title >
+
+            <meta property="og:title" content="I'm Robin! ✨" />
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://hirob.in/" />
+            <meta property="og:image" content="https://hirob.in/img/me.jpg" />
+            <meta property="og:description" content="Here's some stuff I do!" />
+        
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:site" content="@robinhahayes" />
+            <meta name="twitter:creator" content="@robinhahayes" />
+            <meta property="og:title" content="I'm Robin! ✨" />
+            <meta property="og:description" content="Here's some stuff I do!" />
+            <meta name="viewport" content="width=device-width, initial-scale=0.8">
+            <meta name="twitter:image" content="https://hirob.in/img/me.jpg" />  
+      
+          <meta content="">
+
+        <link rel="stylesheet" 
+              type="text/css" 
+              href="../style.css"/>
+
+        <link rel="shortcut icon" 
+              type="../image/png" 
+              href="../img/favicon.png"/>
+        
+    </head>
+
+    <script src="../script.js"></script>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Paytone+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+    </style> 
+
+    <body scroll="no" style="overflow: hidden">
+
+        <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+            <source src="../img/tavernflip.webm" type="video/webm">
+            browser doesn't seem to support HTML5 video. What's 1995 like?
+        </video>
+
+        <div class="content">
+            PROJECTS
+        </div>
+    <br/>
+        <div scroll="yes" class="projects" id="yourDiv">
+            <div id="project">
+                <h2>Keebie</h2>
+                <a href="https://github.com/robinuniverse/Keebie"><img src="../svg/github.svg"></a>
+                <div id="blurb">Keebie is a tool for adding more than one keyboard support to linux machines</div>
+            </div>
+ 
+            <div id="project">
+                <h2>GrimstoneOS</h2> 
+                <a href="https://github.com/robinuniverse/GrimstoneOS"><img src="../svg/github.svg"></a>
+                <div id="blurb">A GUI Replacement pack for Minecraft to give everything a modern dark appearence, includes custom HD font, mod support, and much more!</div>
+            </div>
+
+            <div id="project">
+                <h2>DARKER</h2> 
+                <a href="https://github.com/robinuniverse/DARKER"><img src="../svg/github.svg"></a>
+                <div id="blurb">A Modern and darker theme for the GIMP</div>
+            </div>
+
+            <div id="project">
+                <h2>Discho</h2> 
+                <a href="https://github.com/robinuniverse/Discho"><img src="../svg/github.svg"></a>
+                <div id="blurb">A simple utility for piping bash standard output directly to discord messages / dms</div>
+            </div>
+
+            <div id="project">
+                <h2>SvoxBot</h2> 
+                <a href="https://github.com/robinuniverse/SvoxBot"><img src="../svg/github.svg"></a>
+                <div id="blurb">A Discord bot that strings audio files together in a given order, made to be used with the Half-Life VOX files</div>
+            </div>
+
+            <div id="project">
+                <h2>SP2 Rotate</h2> 
+                <a href="https://github.com/robinuniverse/SurfacePro2-Rotate"><img src="../svg/github.svg"></a>
+                <div id="blurb">A set of scripts that enables automatic orientation switching in linux on the surface pro 2, correctly accounting for changes to the touch matrix</div>
+            </div>
+
+            <div id="project">
+                <h2>VecTweet</h2> 
+                <a href="https://github.com/robinuniverse/VecTweet"><img src="../svg/github.svg"></a>
+                <div id="blurb">Uses the Twitter API to convert a tweet to a SVG representation of that tweet</div>
+            </div>
+
+            <div id="project">
+                <h2>This site!</h2>
+                <a href="../"><img src="../svg/github.svg"></a>
+                <div id="blurb">I programmed and created everything seen on this site!</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>
+                <a href="../">                                      <img src="../svg/close.svg"        hspace="1" style="height:6vh"/>
+                <a href="https://github.com/robinuniverse">         <img src="../svg/github.svg"       hspace="1" style="height:6vh"/>
+                <a href="https://sketchfab.com/Robin.Universe">     <img src="../svg/sketchfab.svg"    hspace="1" style="height:6vh"/>
+                <a href="https://www.deviantart.com/keybourd-man">  <img src="../svg/deviantart.svg"   hspace="1" style="height:6vh"/>
+                <a href="https://twitter.com/RobinUniverse_">       <img src="../svg/twitter.svg"      hspace="1" style="height:6vh"/>
+                <a href="https://ko-fi.com/robin_universe">         <img src="../svg/kofi.svg"         hspace="1" style="height:6vh"/>
+            </p>
+        </div>
+
+        <script type="text/javascript">
+
+            // http://www.dte.web.id/2013/02/event-mouse-wheel.html
+            
+            (function() {
+                function scrollHorizontally(e) {
+                    e = window.event || e;
+                    var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+                    document.getElementById('yourDiv').scrollLeft -= (delta * 40); // Multiplied by 40
+                    e.preventDefault();
+                }
+                if (document.getElementById('yourDiv').addEventListener) {
+                    // IE9, Chrome, Safari, Opera
+                    document.getElementById('yourDiv').addEventListener('mousewheel', scrollHorizontally, false);
+                    // Firefox
+                    document.getElementById('yourDiv').addEventListener('DOMMouseScroll', scrollHorizontally, false);
+                } else {
+                    // IE 6/7/8
+                    document.getElementById('yourDiv').attachEvent('onmousewheel', scrollHorizontally);
+                }
+            })();
+            
+            const slider = document.querySelector('.projects');
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            slider.addEventListener('mousedown', (e) => {
+            isDown = true;
+            slider.classList.add('active');
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+            });
+            slider.addEventListener('mouseleave', () => {
+            isDown = false;
+            slider.classList.remove('active');
+            });
+            slider.addEventListener('mouseup', () => {
+            isDown = false;
+            slider.classList.remove('active');
+            });
+            slider.addEventListener('mousemove', (e) => {
+            if(!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 1; //scroll-fast
+            slider.scrollLeft = scrollLeft - walk;
+            console.log(walk);
+            });
+
+            </script>
+
+    </body>
+</html>
