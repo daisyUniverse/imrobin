@@ -18,7 +18,7 @@ body{
 .links {
     position: absolute;
     margin-left: 4%;
-    margin-top: 35vh;
+    margin-top: 40vh;
     font-size: 2.5vh;
     font-family: 'Source Code Pro', monospace;
     color: white;
@@ -29,11 +29,11 @@ body{
     position: absolute;
     overflow-x:scroll;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin-top: 25vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 20vh;
     font-size: 2vh;
     width: 100vw;
-    height: 60vh;
+    height: 90vh;
     font-family: 'Source Code Pro', monospace;
     white-space: nowrap;
     color: white;
@@ -44,7 +44,7 @@ body{
 .projects:active {
     cursor: grabbing;
     cursor: -webkit-grabbing;
-    transform: scale(1.01);
+    transform: scale(1.02);
 }
 
 .footer {
@@ -90,8 +90,8 @@ h1:hover {
 #project {
     text-align:center;
     border-radius: 15px;
-    height: 50vh;
-    width: 28vh;
+    height: 60vh;
+    width: 30vh;
     margin: 1vw;
     white-space: normal;
     background-color: rgba(37, 37, 37, 0.657);
@@ -101,14 +101,13 @@ h1:hover {
 
 #project a {
     position: relative;
-    top: 63%;
-    left: 38%;
+    top: 65%;
+    left: 0%;
 }
 
 #project:hover {
     background-color: #3d3d3df3;
-    transform: scale(1.02);
-    
+    transform: scale(1.03);
 }
 
 #blurb {
