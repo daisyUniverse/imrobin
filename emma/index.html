@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+            div {
+                font-family: 'Varela Round', sans-serif;
+                font-size: 10vw;
+                position: absolute;
+                top: 40%;
+                margin: 0;
+                text-align: center;
+                width: 100%;
+            }
+
+            #fuck {
+                visibility: hidden;
+            }
+        </style>
+        <title> hi </title>
+    </head>
+    <body>
+        <div id="fuck">
+            Fuck You
+        </div>
+        <div id="button" onclick="func()">
+            <img style="filter: invert(100%);" src="speaker.svg" alt="Speaker Button">
+        </div>
+        <script>
+            function func() {
+                document.getElementById("fuck").style.visibility = "visible";
+                document.getElementById("button").style.visibility = "hidden";
+                var audio = new Audio('yippee.mp3');
+                audio.play();
+                document.title = "fuck you";
+            }
+        </script>
+    </body>
+
+</html>
