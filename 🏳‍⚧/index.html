@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="text/javascript">
+        var one_day = 1000 * 60 * 60 * 24
+        var present_date = new Date();
+        var hrt_day = new Date("03/28/2022")
+        var diff = Math.round(hrt_day.getTime() - present_date.getTime()) / (one_day);
+        var out = Result.toFixed(0);
+        document.write("</br>days since we started: " + out)
+    </script>
     <meta content="text/html; charset=UTF-8"        http-equiv="Content-Type" />
     <meta content="#FFAAAA"                         data-react-helmet="true" name="theme-color" />
     <meta property="og:site_name"                   content="Holy Fuck I'm Trapped In The Web"/>
